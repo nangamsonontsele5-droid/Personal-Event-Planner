@@ -20,12 +20,13 @@ const EventProvider = ({ children }) => {
         );
     };
 
-    const deleteEvent = (eventToDelete) => {
-        setEvents((prevEvents) =>
-            
-            // Filters out the event that matches the id of the event to be deleted, effectively removing it from the events state.
-            prevEvents.filter((event) => event.id !== event.Id));
-    };
+    const deleteEvent = (eventId) => {
+    setEvents((prevEvents) =>
+
+        // Filters out the event that matches the id of the event to be deleted, effectively removing it from the events state.
+        prevEvents.filter((event) => event.id !== eventId)
+    );
+};
 
     return (
         <EventContext.Provider value={{ events, addEvent, updateEvent, deleteEvent }}>

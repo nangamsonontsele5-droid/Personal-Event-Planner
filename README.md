@@ -18,6 +18,18 @@ Personal Event Planner is a React application that allows users to create, organ
 - JavaScript
 - CSS
 
+## Installation
+
+1. Download the project.
+2. Open the project folder in VS Code.
+3. Open the terminal and run:
+npm install
+
+4. Then run:
+npm run dev
+
+5. Open the local URL displayed in your terminal.
+
 ## How to run the application
 
 The user creates an account by entering the required information in the registration form. A registered user can log in to access their account with upcoming events if there are any.
